@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradient Angle</title>
+    <style>
+        div {
+            width: 100%;
+            height: 200px;
+            margin-top: 10px;
+            text-align: center;
+            padding-top: 90px;
+        }
+
+        #div0 {
+            background: #00BDB6;
+            background: -webkit-linear-gradient(#00BDB6, #2BB7EB);
+            background: -o-linear-gradient(#00BDB6, #2BB7EB);
+            background: -moz-linear-gradient(#00BDB6,#2BB7EB);
+            background: linear-gradient(#00BDB6, #2BB7EB);
+        }
+
+        #div1 {
+            background: #00BDB6;
+            background: -webkit-linear-gradient(-90deg, #00BDB6, #2BB7EB);
+            background: -o-linear-gradient(-90deg, #00BDB6, #2BB7EB);
+            background: -moz-linear-gradient(-90deg, #00BDB6,#2BB7EB);
+            background: linear-gradient(-90deg, #00BDB6, #2BB7EB);
+        }
+
+        #div2 {
+            background: #00BDB6;
+            background: -webkit-linear-gradient(90deg, #00BDB6, #2BB7EB);
+            background: -o-linear-gradient(90deg, #00BDB6, #2BB7EB);
+            background: -moz-linear-gradient(90deg, #00BDB6,#2BB7EB);
+            background: linear-gradient(90deg, #00BDB6, #2BB7EB);
+        }
+
+        #div3 {
+            background: #00BDB6;
+            background: -webkit-linear-gradient(-180deg, #00BDB6, #2BB7EB);
+            background: -o-linear-gradient(-180deg, #00BDB6, #2BB7EB);
+            background: -moz-linear-gradient(-180deg, #00BDB6,#2BB7EB);
+            background: linear-gradient(-180deg, #00BDB6, #2BB7EB);
+        }
+
+        #div4 {
+            background: #00BDB6;
+            background: -webkit-linear-gradient(180deg, #00BDB6, #2BB7EB);
+            background: -o-linear-gradient(180deg, #00BDB6, #2BB7EB);
+            background: -moz-linear-gradient(180deg, #00BDB6,#2BB7EB);
+            background: linear-gradient(180deg, #00BDB6, #2BB7EB);
+        }
+    </style>
+</head>
+<body>
+    <div id="div0">
+        0deg
+    </div>
+
+    <div id="div1">
+        -90deg
+    </div>
+
+    <div id="div2">
+        90deg
+    </div>
+
+    <div id="div3">
+        -180deg
+    </div>
+
+    <div id="div4">
+        180deg
+    </div>
+</body>
+</html>

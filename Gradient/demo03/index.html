@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gradient Radial, Shape</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div {
+            width: 100%;
+            height: 300px;
+            margin-top: 10px;
+            text-align: center;
+            padding-top: 140px;
+        }
+
+        #div0 {
+            background: #00BDB6;
+            background: -webkit-radial-gradient(#00BDB6, #2BB7EB);
+            background: -o-radial-gradient(#00BDB6, #2BB7EB);
+            background: -moz-radial-gradient(#00BDB6,#2BB7EB);
+            background: radial-gradient(#00BDB6, #2BB7EB);
+        }
+
+        #div1 {
+            background: #00BDB6;
+            background: -webkit-radial-gradient(#00BDB6 20%, #2BB7EB 80%);
+            background: -o-radial-gradient(#00BDB6 20%, #2BB7EB 80%);
+            background: -moz-radial-gradient(#00BDB6 20%, #2BB7EB 80%);
+            background: radial-gradient(#00BDB6 20%, #2BB7EB 80%);
+        }
+
+        #div2 {
+            background: #00BDB6;
+            background: -webkit-radial-gradient(#00BDB6 5%, #2BB7EB 95%);
+            background: -o-radial-gradient(#00BDB6 5%, #2BB7EB 95%);
+            background: -moz-radial-gradient(#00BDB6 5%, #2BB7EB 95%);
+            background: radial-gradient(#00BDB6 5%, #2BB7EB 95%);
+        }
+
+        #div3 {
+            background: #00BDB6;
+            background: -webkit-radial-gradient(circle, #00BDB6, yellow, #2BB7EB);
+            background: -o-radial-gradient(circle, #00BDB6, yellow, #2BB7EB);
+            background: -moz-radial-gradient(circle, #00BDB6, yellow, #2BB7EB);
+            background: radial-gradient(circle, #00BDB6, yellow, #2BB7EB);
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div0">
+        Nothing
+    </div>
+
+    <div id="div1">
+        20% 80%
+    </div>
+
+    <div id="div2">
+        5% 95%
+    </div>
+
+    <div id="div3">
+        shape and three color
+    </div>
+</body>
+</html>
