@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        @keyframes example {
+            0% {background-color: yellow; left: 0; top: 0;}
+            25% {background-color: red; left: 200px; top: 0;}
+            50% {background-color: aqua; left: 200px; top: 200px;}
+            75% {background-color: aquamarine; left: 0px; top: 200px;}
+            100% {background-color: azure; left: 0; top: 0;}
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: yellow;
+            animation: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

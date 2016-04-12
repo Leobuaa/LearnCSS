@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @keyframes example {
+            0% {background-color: yellow; left: 0; top: 0;}
+            25% {background-color: azure; left: 100px; top: 0;}
+            50% {background-color: aqua; left: 100px; top: 100px;}
+            75% {background-color: aquamarine; left: 0; top: 100px;}
+            100% {background-color: red; left: 0; top: 0;}
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            display: inline-block;
+            background-color: yellow;
+            margin: 0 120px 5px 0;
+            text-align: center;
+            padding-top: 35px;
+            vertical-align: middle;
+        }
+
+        #div1 {
+            animation: example;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            margin-left: 0;
+            animation-timing-function: linear;
+        }
+
+        #div2 {
+            animation: example;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+
+        #div3 {
+            animation: example;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+
+        #div4 {
+            animation: example;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+
+        #div5 {
+            animation: example;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        #div6 {
+            animation: example 4s linear 1s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        Linear
+    </div>
+
+    <div id="div2">
+        Ease
+    </div>
+
+    <div id="div3">
+        Ease-in
+    </div>
+
+    <div id="div4">
+        Ease-out
+    </div>
+
+    <div id="div5">
+        Ease-in-out
+    </div>
+
+    <div id="div6">
+        Short Writing Linear
+    </div>
+</body>
+</html>
