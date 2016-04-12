@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translate</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin: 40px;
+        }
+
+        .translateX {
+            -ms-transform: translateX(60px);
+            -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+        }
+
+        .translateY {
+            -ms-transform: translateY(60px);
+            -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+        }
+
+        .translateZ {
+            -ms-transform: translateZ(60px);
+            -webkit-transform: translateZ(60px);
+            transform: translateZ(60px);
+        }
+
+        .translate3D {
+            -ms-transform: translate3d(60px, 60px, 60px);
+            -webkit-transform: translate3d(60px, 60px, 60px);
+            transform: translate3d(60px, 60px, 60px);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This is a normal block
+    </div>
+    <div class="translateX">
+        TranslateX
+    </div>
+    <div class="translateY">
+        TranslateY
+    </div>
+    <div class="translateZ">
+        TranslateZ
+    </div>
+    <div class="translate3D">
+        Translate3D
+    </div>
+</body>
+</html>

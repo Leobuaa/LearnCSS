@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkewX, SkewY, Skew</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            margin: 30px;
+        }
+
+        .skewX {
+            -ms-transform: skewX(20deg);
+            -webkit-transform: skewX(20deg);
+            transform: skewX(20deg);
+        }
+
+        .skewY {
+            -ms-transform: skewY(20deg);
+            -webkit-transform: skewY(20deg);
+            transform: skewY(20deg);
+        }
+
+        .skew {
+            -ms-transform: skew(10deg, 10deg);
+            -webkit-transform: skew(10deg, 10deg);
+            transform: skew(10deg, 10deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This is a normal div block
+    </div>
+    <div class='skewX'>
+        SkewX this block
+    </div>
+
+    <div>
+        This is a normal div block
+    </div>
+    <div class='skewY'>
+        SKewY this block
+    </div>
+    <div>
+        This is a normal div block
+    </div>
+    <div class='skew'>
+        Skew this block
+    </div>
+</body>
+</html>

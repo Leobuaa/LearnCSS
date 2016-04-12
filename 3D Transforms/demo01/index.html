@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rotate</title>
+    <style>
+        div {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .rotateX {
+            -ms-transform: rotateX(150deg);
+            -webkit-transform: rotateX(150deg);
+            transform: rotateX(150deg);
+        }
+
+        .rotateY {
+            -ms-transform: rotateY(150deg);
+            -webkit-transform: rotateY(150deg);
+            transform: rotateY(150deg);
+        }
+
+        .rotateZ {
+            -ms-transform: rotateZ(90deg);
+            -webkit-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This is a normal div block.
+    </div>
+    <div class="rotateX">
+        RotateX
+    </div>
+    <div class="rotateY">
+        RotateY
+    </div>
+    <div class="rotateZ">
+        RotateZ
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speed Curve of the Transition </title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            -webkit-transition: width 0.5s, height 0.5s;
+            transition: width 0.5s, height 0.5s;
+            margin: 20px;
+            padding: 20px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        div:hover {
+            width: 150px;
+            height: 150px;
+        }
+
+        .linear {
+            transition-timing-function: linear;
+        }
+
+        .ease {
+            transition-timing-function: ease;
+        }
+
+        .ease-in {
+            transition-timing-function: ease-in;
+        }
+
+        .ease-out {
+            transition-timing-function: ease-out;
+        }
+
+        .ease-in-out {
+            transition-timing-function: ease-in-out;
+        }
+
+        .cubic-bezier {
+            transition-timing-function: cubic-bezier(1, 1, 1, 1);
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <div class="linear">
+        Hello Linear
+    </div>
+    <div class="ease">
+        Hello Ease
+    </div>
+    <div class="ease-in">
+        Hello Ease-in
+    </div>
+    <div class="ease-out">
+        Hello Ease-out
+    </div>
+    <div class="ease-in-out">
+        Hello Ease-in-out
+    </div>
+    <div class="cubic-bezier">
+        Hello Cubic-bezier
+    </div>
+</body>
+</html>
