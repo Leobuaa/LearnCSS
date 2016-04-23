@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loading effects 02</title>
+    <style>
+        .loading {
+            width: 150px;
+            height: 5px;
+            background-color: lightgreen;
+            position: relative;
+            -webkit-animation: changeBgColor 1s ease infinite;
+        }
+
+        .loading span {
+            display: inline-block;
+            position: absolute;
+            margin-top: -7px;
+            margin-left:-8px;
+            width: 16px;
+            height: 16px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            -webkit-animation: changePosition 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes changeBgColor {
+            0% {
+                background-color: lightgreen;
+            }
+
+            100% {
+                background-color: lightblue;
+            }
+        }
+
+        @-webkit-keyframes changePosition {
+            0% {
+                background-color: lightgreen;
+            }
+
+            100% {
+                background-color: lightblue;
+                margin-left: 142px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="loading">
+    <span></span>
+</div>
+</body>
+</html>
